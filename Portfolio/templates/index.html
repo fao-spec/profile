@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+{% block content %}
+    <div class="top">
+        <div class="img">
+            <img src="{% static 'images/profile.jpg' %}" alt="">
+            <div>Creative developer</div>
+        </div>
+        <div class="get">
+            <div class="text">Turning Complex Ideas Into  <p style="color: white; display: inline;">Intuitive</p> Solutions.</div>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=favourarowosegbeo@gmail.com&su=Hello&body=I%20saw%20your%20portfolio!" target="_blank">
+                <button class="getstarted">Get in touch</button>
+            </a>
+        </div>
+        <div class="tags">
+            <div class="tagsname">Frontend Development</div>
+            <div class="tagsname">Backend Development</div>
+            <div class="tagsname">API Integration</div>
+            <div class="tagsname">Responsive Design</div>
+            <div class="tagsname">Testing & Debugging</div>
+            <div class="tagsname">Version Control (Git)</div>
+        </div>
+        <div class="next">
+            <div class="projects">My Projects</div>
+            <div class="project">
+                <div class="projectimage"><img style="width: 100%; height: 100%;" src="{% static 'images/propertypulse.png' %}" alt=""></div>
+                <div class="projectcontent">
+                    <div class="topproject">Backend Development | Responsive Design | API Integration</div>
+                    <div class="middleproject">Building Your Property’s Perfect Matchmaker</div>
+                    <div class="downproject">A 24/7 digital platform making property management simpler for landlords and renting easier for tenants.</div>
+                    <a href="https://property-pulse-eosin-mu.vercel.app/" target="_blank"><button class="getstarted">View Project</button></a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectimage"><img style="width: 100%; height: 100%;" src="{% static 'images/coinnode.png' %}" alt=""></div>
+                <div class="projectcontent">
+                    <div class="topproject">Frontend Development | Responsive Design | Version Control (Git)</div>
+                    <div class="middleproject">Your Frontline Crypto Helpdesk</div>
+                    <div class="downproject">A web-first support solution giving users clarity, confidence, and quick fixes when they need them most.</div>
+                    <a href="https://fao-spec.github.io/CryptoSupport/" target="_blank"><button class="getstarted">View Project</button></a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectimage"><img style="width: 100%; height: 100%;" src="{% static 'images/pinetwork.png' %}" alt=""></div>
+                <div class="projectcontent">
+                    <div class="topproject">Frontend Development | Responsive Design | Testing & Debugging</div>
+                    <div class="middleproject">The Future of Digital Trading</div>
+                    <div class="downproject">A community-powered platform making crypto exchange simple, secure, and accessible.</div>
+                    <a href="https://fao-spec.github.io/pinetwork/" target="_blank"><button class="getstarted">View Project</button></a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectimage"><img style="width: 100%; height: 100%;" src="{% static 'images/portfolio.png' %}" alt=""></div>
+                <div class="projectcontent">
+                    <div class="topproject">Backend Development | Testing & Debugging | Version Control (Git)</div>
+                    <div class="middleproject">Turning Vision into Visuals</div>
+                    <div class="downproject">A portfolio demonstrating solutions that go deeper than expectations.</div>
+                    <a href="https://portfolio-1-2avc.onrender.com" target="_blank"><button class="getstarted">View Project</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="testimonysection">
+            <div class="testimony">Testimonials</div>
+            <div>Here are a few kind words coworkers and clients has to say.</div>
+            <div class="testimonies">
+                <div class="testifiers">
+                    <div class="side"><img style="width: 100%; height: 100%;" src="{% static 'images/sidekickicons.png' %}" alt=""></div>
+                    <div class="say">Favour built our platform end-to-end, ensuring everything from backend APIs to frontend UI worked seamlessly. His problem-solving and attention to detail made a huge difference.</div>
+                    <div class="testimonyprofilesection">
+                        <div class="testimonyprofile">
+                            <img style="width: 100%; height: 100%; border-radius: 50%;" src="{% static 'images/gideon.jpg' %}" alt="">
+                        </div>
+                        <div class="testimonydetails">
+                            <div class="testimonydetailsname">Gideon Odiase</div>
+                            <div class="testimonydetailstype">Software Engineer, Kwif</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testifiers">
+                    <div class="side"><img style="width: 100%; height: 100%;" src="{% static 'images/sidekickicons.png' %}" alt=""></div>
+                    <div class="say">Favour streamlined our onboarding and design system, making the product more intuitive.</div>
+                    <div class="testimonyprofilesection">
+                        <div class="testimonyprofile">
+                            <img style="width: 100%; height: 100%; border-radius: 50%;" src="{% static 'images/Goodness.jpg' %}" alt="">
+                        </div>
+                        <div class="testimonydetails">
+                            <div class="testimonydetailsname">Goodness Arowosegbe</div>
+                            <div class="testimonydetailstype">Product Designer, Aspir</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testifiers" id="hidden">
+                    <div class="side"><img style="width: 100%; height: 100%;" src="{% static 'images/sidekickicons.png' %}" alt=""></div>
+                    <div class="say">Favour crafted clean assets, simplified user flows, and shaped our design system.</div>
+                    <div class="testimonyprofilesection">
+                        <div class="testimonyprofile"></div>
+                        <div class="testimonydetails">
+                            <div class="testimonydetailsname">Popsicool</div>
+                            <div class="testimonydetailstype">Web Developer, Hiit plc</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimony">Some Tools I Use</div>
+        <div class="tags">
+            <div class="tagsname">Visual Studio Code</div>
+            <div class="tagsname">GitHub</div>
+            <div class="tagsname">MongoDB Atlas</div>
+            <div class="tagsname">Vercel</div>
+            <div class="tagsname">Docker</div>
+            <div class="tagsname">Discord</div>
+        </div>
+        <div class="testimony">About Me</div>
+        <div class="aboutme">
+            <div class="aboutmetext">
+                An enthusiastic tech lover, with the aim of making tech a lifestyle not just for me but for all. I have the skill set to achieve tech goals from tech ideas I encounter. Over the years, I have gained very useful experience in the process of supporting several tech innovative endeavours while pursuing my undergraduate studies. I have worked on several web projects, and have as well analyzed data of different sorts. With my expertise, I am well equipped to execute (big) data analysis and to join any group in carrying out a project and to get any task given to me done based on my listed skills.</div>
+            <div class="aboutmeimage" id="hidden"><img style="width: 100%; height: 100%;" src="{% static 'images/profile.jpg' %}" alt=""></div>
+        </div>
+        <div class="testimony">Experience</div>
+        <div class="experience">
+            <div class="experiencename">Freelance Web Developer</div>
+            <div class="experiencetype">
+                <div class="experiencetypename">Freelance</div>
+                <div class="experiencetypedate">November 2024 - Present</div>
+            </div>
+        </div>
+        <hr style="width: 100%; color: white; margin-top: 30px; margin-bottom: 60px;">
+        <div class="experience">
+            <div class="experiencename">Web Developer Intern</div>
+            <div class="experiencetype">
+                <div class="experiencetypename">HiiT (PLC)</div>
+                <div class="experiencetypedate">June 2024 - November 2024</div>
+            </div>
+        </div>
+        <hr style="width: 100%; color: white; margin-top: 30px; margin-bottom: 60px;">
+        <!-- href="{% static 'resume.pdf' %}" download="My_Resume.pdf" -->
+        <a href="{% static 'resume.pdf' %}"  target="_blank">
+            <div class="get"><button class="getstarted">View Resume</button></div>
+        </a>
+        <div class="gett">
+            <div class="contact">
+                <div class="contactname">Intrested in Working Together?</div>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=favourarowosegbeo@gmail.com&su=Hello&body=I%20saw%20your%20portfolio!" target="_blank">
+                    <div class="get"><button class="getstarted">Get in touch</button></div>
+                </a>
+                <div class="get">
+                    <div class="contactprofile">
+                    <div class="contactprofilepicture">
+                        <img style="width: 100%; height: 100%; border-radius: 50%;" src="{% static 'images/profile.jpg' %}" alt="">
+                    </div>
+                    <div class="contactdetails">
+                        <div class="contactdetailsname">Favour Arowosegbe - Web Developer</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
