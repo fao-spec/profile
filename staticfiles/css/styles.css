@@ -604,7 +604,7 @@ img {
 /* Small phones */
 @media (max-width: 480px) {
     .tagsname {
-        font-size: 20%;
+        font-size: 35%;
     }
 
     .text {
