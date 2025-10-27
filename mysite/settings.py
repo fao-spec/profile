@@ -116,10 +116,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/5.2/howto/static-files/
+
+import os
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]  # if you keep a project-level static folder
-STATIC_ROOT = BASE_DIR / "staticfiles"    # where collectstatic will copy everything
+
+# Public static folder for Vercel
+STATICFILES_DIRS = [
+    BASE_DIR / "public" / "static",
+]
+
+# Collectstatic destination (for local or other deployments)
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# WhiteNoise storage for compressed static files
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# Allow serving static on Vercel
+if os.environ.get('VERCEL'):
+    DEBUG = False
 
 
 # Default primary key field type
